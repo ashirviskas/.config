@@ -1,11 +1,11 @@
 [options]
-#allow_bold = true
+allow_bold = true
 #audible_bell = false
 #bold_is_bright = true
-#clickable_url = true
+clickable_url = true
 #dynamic_title = true
 font = Monospace 9
-#fullscreen = true
+fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
 #scroll_on_output = false
@@ -55,22 +55,22 @@ background = rgba(16, 18, 24, 0.7)
 highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
+color0 = #1D2330
+color1 = #645377
+color2 = #AD69AF
+color3 = #B1B5C8
+color4 = #92969d
+color5 = #645377
+color6 = #AD69AF
+color7 = #B1B5C8
+color8 = #4B5665
+color9 = #84598D
+color10 = #7B8290
+color11 = #d1d7e1
+color12 = #4B5665
+color13 = #84598D
+color14 = #7B8290
+color15 = #d1d7e1
 
 [hints]
 #font = Monospace 12
