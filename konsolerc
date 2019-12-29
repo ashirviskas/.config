@@ -1,0 +1,37 @@
+[Desktop Entry]
+DefaultProfile=
+
+[Favorite Profiles]
+Favorites=
+
+[MainWindow]
+Height 1024=770
+Height 1080=1046
+Height 1152=1118
+Height 1200=1166
+Height 1392=470
+Height 1440=1406
+Height 1920=912
+Height 2160=2126
+Height 240=480
+Height 480=447
+Height 600=566
+Height 720=686
+Height 768=734
+Height 900=866
+State=AAAA/wAAAAD9AAAAAAAAA7QAAAQCAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1080=1072
+Width 1280=1264
+Width 1368=1352
+Width 1400=1384
+Width 1600=1584
+Width 1856=640
+Width 1920=948
+Width 2048=2032
+Width 2560=2544
+Width 320=312
+Width 3840=3824
+Width 640=632
+Width 800=784
+Window-Maximized 1024x1280=true
