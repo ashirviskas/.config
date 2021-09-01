@@ -62,7 +62,7 @@ status.register("battery",
 #
 # Note: the network module requires PyPI package netifaces
 #status.register("network",
-#    interface="enp4s0",
+#    interface="wlo1",
 #    format_up="{v4cidr}",)
 
 # Note: requires both netifaces and basiciw (for essid and quality)
@@ -96,7 +96,7 @@ status.register("mpd",
     },)
 
 status.register("network",
-    interface="wlp5s0",
+    interface="wlo1",
     format_up="{essid} {quality:03.0f}% ↓{network_graph_recv}{bytes_recv}KB/s ↑{network_graph_sent}{bytes_sent}KB/s",
 )
 
