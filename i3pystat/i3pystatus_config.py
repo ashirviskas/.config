@@ -13,8 +13,8 @@ status.register("clock",
 status.register("load")
 
 # Shows your CPU temperature, if you have a Intel CPU
-status.register("temp",
-    format="{temp:.0f}°C",)
+#status.register("temp",
+#    format="{temp:.1f}°C",)
 
 # The battery monitor has many formatting options, see README for details
 
