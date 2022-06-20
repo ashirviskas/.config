@@ -29,7 +29,8 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec kitty
+#bindsym $mod+Return exec konsole
 #termite -e /usr/bin/zsh
 
 # kill focused window
@@ -181,19 +182,35 @@ gaps outer 0
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
-#	status_command i3pystatus -c /home/mati/.config/i3pystat/i3pystatus_config.py
-#	font pango:hack	10
-#	height 18        
-#	colors {
-#		background $bg-color
-#	        separator #757575
-#		#                  border             background         text
-#		focused_workspace  $bg-color          $bg-color          $text-color
-#		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-#		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-#	}
-#}
+bar {
+	status_command i3pystatus -c /home/mati/.config/i3pystat/i3pystatus_config.py
+	font pango:hack	10
+	height 18        
+	colors {
+		background $bg-color
+	        separator #757575
+		#                  border             background         text
+		focused_workspace  $bg-color          $bg-color          $text-color
+		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	}
+}
+
+bar {
+    font pango:DejaVu Sans Mono, FontAwesome 12
+    position top
+    status_command /home/mati/personal/i3status-rust/target/release/i3status-rs /home/mati/.config/i3status-rust/default.toml
+    colors {
+        separator #666666
+        background #222222
+        statusline #dddddd
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace #2f343a #900000 #ffffff
+    }
+}
+
 
 # floating windows
 for_window [class="Pavucontrol"] floating enable
@@ -275,10 +292,10 @@ exec xrandr --dpi 96
 exec xset -b
 
 #exec_always --no-startup-id $HOME/polybar-collection/launch.sh
-exec_always --no-startup-id ~/.config/polybar/launch.sh --docky
+#exec_always --no-startup-id ~/.config/polybar/launch.sh --docky
 exec always feh --bg-scale ~/Pictures/wps/dw_blurred.jpg
 exec_always feh --bg-scale ~/Pictures/wps/dw_blurred.jpg
 exec --no-startup-id libinput-gestures
 exec /usr/bin/dunst
 exec_always copyq
-exec_always aw-qt
+exec aw-qt

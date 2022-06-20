@@ -1,0 +1,49 @@
+theme = "solarized-dark"
+icons = "awesome"
+
+[[block]]
+block = "net"
+device = "wlp3s0"
+format = "$signal.eng(2) $ssid.str() $frequency.eng() $speed_down.eng(3,B,K)$speed_up.eng(3,B,K)"
+
+[[block]]
+block = "disk_space"
+path = "/"
+info_type = "available"
+interval = 20
+warning = 20.0
+alert = 10.0
+format = "$total/$available"
+
+[[block]]
+block = "memory"
+#display_type = "memory"
+format_mem = "$mem_total_used $mem_total_used_percents -$mem_used $mem_used_percents"
+format_swap = "$swap_used $swap_used_percents"
+interval = 1
+warning_mem = 70
+critical_mem = 90
+
+[[block]]
+block = "battery"
+hide_missing = true
+format = "{power} {percentage} {time}"
+
+[[block]]
+block = "backlight"
+device = "amdgpu_bl0"
+
+[[block]]
+block = "cpu"
+
+[[block]]
+block = "load"
+interval = 5
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "time"
+interval = 5
+format = "%a %F %T"
