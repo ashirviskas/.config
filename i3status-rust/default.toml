@@ -1,10 +1,16 @@
 theme = "solarized-dark"
 icons = "awesome"
 
+#[[block]]
+#block = "focused_window"
+#[block.format]
+#full = "$title.rot-str(15)|"
+#short = "$title.rot-str(10)|"
+
 [[block]]
 block = "net"
 device = "wlp3s0"
-format = "$signal.eng(2) $ssid.str() $frequency.eng() $speed_down.eng(3,B,K)$speed_up.eng(3,B,K)"
+format = "$signal_strength.eng(2) $ssid.str() $frequency.eng() $speed_down.eng(3,B,K)$speed_up.eng(3,B,K)"
 
 [[block]]
 block = "disk_space"
@@ -26,8 +32,9 @@ critical_mem = 90
 
 [[block]]
 block = "battery"
-hide_missing = true
-format = "{power} {percentage} {time}"
+#device = "BAT0"
+#hide_missing = false
+format = "$percentage $time $power"
 
 [[block]]
 block = "backlight"
